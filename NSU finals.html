@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSU Personal Exam Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <div class="mb-4">
+                <h1 class="text-4xl font-bold text-gray-800 mb-1">North South University</h1>
+                <h2 class="text-2xl font-semibold text-blue-600">Personal Exam Schedule</h2>
+            </div>
+            <p class="text-gray-600 text-lg">Create your personalized exam routine from the university schedule</p>
+        </div>
+
+        <!-- Schedule Builder -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">🎯 Select Your Exam Slots</h2>
+            
+            <div class="grid gap-6">
+                <!-- MW Days -->
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-blue-700 mb-4">MW (Monday-Wednesday)</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Tuesday, 26th August 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Tuesday, 26th August 2025" data-time="08:00 AM – 09:30 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">08:00 AM – 09:30 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Tuesday, 26th August 2025" data-time="11:20 AM – 12:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">11:20 AM – 12:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Tuesday, 26th August 2025" data-time="02:40 PM – 04:10 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">02:40 PM – 04:10 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Tuesday, 26th August 2025" data-time="05:00 PM – 06:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">05:00 PM – 06:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-2">Wednesday, 27th August 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Wednesday, 27th August 2025" data-time="09:40 AM – 11:10 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">09:40 AM – 11:10 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Wednesday, 27th August 2025" data-time="01:00 PM – 02:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">01:00 PM – 02:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-blue-50 transition-colors" data-day="Wednesday, 27th August 2025" data-time="04:20 PM – 05:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">04:20 PM – 05:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ST Days -->
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-green-700 mb-4">ST (Sunday-Tuesday)</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Thursday, 28th August 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Thursday, 28th August 2025" data-time="08:00 AM – 09:30 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">08:00 AM – 09:30 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Thursday, 28th August 2025" data-time="11:20 AM – 12:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">11:20 AM – 12:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Thursday, 28th August 2025" data-time="02:40 PM – 04:10 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">02:40 PM – 04:10 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Thursday, 28th August 2025" data-time="05:00 PM – 06:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">05:00 PM – 06:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-2">Saturday, 30th August 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Saturday, 30th August 2025" data-time="09:40 AM – 11:10 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">09:40 AM – 11:10 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Saturday, 30th August 2025" data-time="01:00 PM – 02:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">01:00 PM – 02:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-green-50 transition-colors" data-day="Saturday, 30th August 2025" data-time="04:20 PM – 05:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">04:20 PM – 05:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RA Days -->
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-purple-700 mb-4">RA (Thursday-Saturday)</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Sunday, 31st August 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Sunday, 31st August 2025" data-time="08:00 AM – 09:30 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">08:00 AM – 09:30 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Sunday, 31st August 2025" data-time="11:20 AM – 12:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">11:20 AM – 12:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Sunday, 31st August 2025" data-time="02:40 PM – 04:10 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">02:40 PM – 04:10 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Sunday, 31st August 2025" data-time="05:00 PM – 06:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">05:00 PM – 06:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-2">Monday, 1st September 2025</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Monday, 1st September 2025" data-time="09:40 AM – 11:10 AM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">09:40 AM – 11:10 AM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Monday, 1st September 2025" data-time="01:00 PM – 02:30 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">01:00 PM – 02:30 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                            <div class="exam-slot border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-purple-50 transition-colors" data-day="Monday, 1st September 2025" data-time="04:20 PM – 05:50 PM">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium">04:20 PM – 05:50 PM</span>
+                                    <input type="checkbox" class="slot-checkbox">
+                                </div>
+                                <input type="text" class="course-input mt-2 w-full text-xs border border-gray-200 rounded px-2 py-1 hidden" placeholder="Enter course name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 text-center">
+                <button id="generateSchedule" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg">
+                    📋 Generate My Schedule
+                </button>
+            </div>
+        </div>
+
+        <!-- Generated Schedule -->
+        <div id="personalSchedule" class="bg-white rounded-xl shadow-lg p-6 hidden">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">🎓 Your Personal Exam Schedule</h2>
+            <div id="scheduleContent" class="space-y-4"></div>
+            
+            <div class="mt-6 flex gap-4 justify-center">
+                <button id="printSchedule" class="bg-green-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors">
+                    🖨️ Print Schedule
+                </button>
+                <button id="clearSchedule" class="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors">
+                    🗑️ Clear All
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle exam slot selection
+        document.querySelectorAll('.exam-slot').forEach(slot => {
+            const checkbox = slot.querySelector('.slot-checkbox');
+            const courseInput = slot.querySelector('.course-input');
+            
+            slot.addEventListener('click', (e) => {
+                if (e.target === courseInput) return;
+                
+                checkbox.checked = !checkbox.checked;
+                
+                if (checkbox.checked) {
+                    courseInput.classList.remove('hidden');
+                    slot.classList.add('bg-blue-100', 'border-blue-400');
+                    courseInput.focus();
+                } else {
+                    courseInput.classList.add('hidden');
+                    slot.classList.remove('bg-blue-100', 'border-blue-400');
+                    courseInput.value = '';
+                }
+            });
+            
+            checkbox.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+
+        // Generate schedule
+        document.getElementById('generateSchedule').addEventListener('click', () => {
+            const selectedSlots = [];
+            
+            document.querySelectorAll('.exam-slot').forEach(slot => {
+                const checkbox = slot.querySelector('.slot-checkbox');
+                const courseInput = slot.querySelector('.course-input');
+                
+                if (checkbox.checked) {
+                    const day = slot.dataset.day;
+                    const time = slot.dataset.time;
+                    const courseName = courseInput.value.trim() || 'Course Name Not Entered';
+                    
+                    selectedSlots.push({ day, time, courseName });
+                }
+            });
+            
+            if (selectedSlots.length === 0) {
+                alert('Please select at least one exam slot!');
+                return;
+            }
+            
+            // Sort by date
+            selectedSlots.sort((a, b) => new Date(a.day) - new Date(b.day));
+            
+            const scheduleContent = document.getElementById('scheduleContent');
+            scheduleContent.innerHTML = '';
+            
+            selectedSlots.forEach((slot, index) => {
+                const examCard = document.createElement('div');
+                examCard.className = 'bg-gradient-to-r from-blue-50 to-purple-50 border border-gray-200 rounded-lg p-4';
+                examCard.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">${slot.courseName}</h3>
+                            <p class="text-gray-600">${slot.day}</p>
+                            <p class="text-blue-600 font-medium">${slot.time}</p>
+                        </div>
+                        <div class="text-2xl">📚</div>
+                    </div>
+                `;
+                scheduleContent.appendChild(examCard);
+            });
+            
+            document.getElementById('personalSchedule').classList.remove('hidden');
+            document.getElementById('personalSchedule').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Print schedule
+        document.getElementById('printSchedule').addEventListener('click', () => {
+            const scheduleSection = document.getElementById('personalSchedule');
+            const originalContents = document.body.innerHTML;
+            const printContents = `
+                <div style="font-family: 'Inter', sans-serif; padding: 20px;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <div style="margin-bottom: 20px;">
+                            <h1 style="font-size: 28px; font-weight: bold; color: #374151; margin: 0;">North South University</h1>
+                            <h2 style="font-size: 20px; font-weight: 600; color: #2563eb; margin: 5px 0 0 0;">Personal Exam Schedule</h2>
+                        </div>
+                    </div>
+                    ${document.getElementById('scheduleContent').outerHTML}
+                </div>
+            `;
+            
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+            
+            // Re-attach event listeners after restoring content
+            location.reload();
+        });
+
+        // Clear schedule
+        document.getElementById('clearSchedule').addEventListener('click', () => {
+            if (confirm('Are you sure you want to clear all selections?')) {
+                document.querySelectorAll('.exam-slot').forEach(slot => {
+                    const checkbox = slot.querySelector('.slot-checkbox');
+                    const courseInput = slot.querySelector('.course-input');
+                    
+                    checkbox.checked = false;
+                    courseInput.classList.add('hidden');
+                    courseInput.value = '';
+                    slot.classList.remove('bg-blue-100', 'border-blue-400');
+                });
+                
+                document.getElementById('personalSchedule').classList.add('hidden');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96f5c55b51a2814e',t:'MTc1NTIzMDI3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
